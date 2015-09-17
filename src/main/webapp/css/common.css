@@ -1,0 +1,6 @@
+body, section, header, footer, ul, li, h1, h2, h3, h4, h5, h6, p {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
