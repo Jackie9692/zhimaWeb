@@ -28,9 +28,9 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="${ctx}/images/backgroundImg2.jpg" alt="">
-					<div class="carousel-caption slogan">
-						<h4>First Thumbnail label</h4>
+					<img src="${ctx}/images/backgroundImg1.jpg" alt="">
+					<div class="carousel-caption slogan hide">
+						<h3>First Thumbnail label</h3>
 						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
 							dolor id nibh ultricies vehicula ut id elit.</p>
@@ -42,10 +42,10 @@
 				<div class="item">
 					<img src="${ctx}/images/backgroundImg2.jpg" alt="">
 					<div class="carousel-caption slogan">
-						<h4>Second Thumbnail label</h4>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
-							dolor id nibh ultricies vehicula ut id elit.</p>
+						<h3>Second Thumbnail label</h3>
+						<p>I get used to pouring away the water directly after I using it. SOneday, my mother asked me to help her wash the closthes,
+						 as I was about to pour away the water, my mother stopped me and she told me that most water can be recycled.
+						 It can be used to water the flower or to wash other things.</p>
 					</div>
 					<div class="clickIn">
 						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.jpg"/></a>
@@ -54,7 +54,7 @@
 				<div class="item">
 					<img src="${ctx}/images/backgroundImg3.jpg" alt="">
 					<div class="carousel-caption slogan">
-						<h4>Third Thumbnail label</h4>
+						<h3>Third Thumbnail label</h3>
 						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
 							dolor id nibh ultricies vehicula ut id elit.</p>

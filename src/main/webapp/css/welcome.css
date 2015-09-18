@@ -1,8 +1,8 @@
 .slogan{
-	top: 55%;
-	background: rgba(0,0,0,0.45);
+	top: 35%;
+	background: rgba(0,0,0,0.15);
     width: 80%;
-    height: 80px;
+    height: 120px;
     margin: 0 auto;
     text-align: center;
     border-radius:25px;
@@ -19,4 +19,9 @@
 .clickIn a img{
 	margin: 0 auto;
 	width: 120px;
+}
+
+.slogan p{
+	font-size: 18px;
+	color: black;
 }
