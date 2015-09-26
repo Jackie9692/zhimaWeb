@@ -4,6 +4,12 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 
+	<context-param>
+        <param-name>rootName</param-name>
+        <param-value>huanglianglei</param-value>
+        <param-name>passWord</param-name>
+        <param-value>lianglei</param-value>
+	</context-param>
 	<!-- Spring 应用上下文，理解层次化的ApplicationContext -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>

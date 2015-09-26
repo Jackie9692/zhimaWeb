@@ -1,29 +1,13 @@
-package com.zhima.dev.controller;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+package com.zhima.dev.controller.admin;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/admin")
-public class CustomerController {
+@RequestMapping("/customer")
+public class AdminController {
 	
-	@RequestMapping(value="/login", method=RequestMethod.GET) //跳转到管理员登陆界面
-	public String adminLogin(HttpServletRequest request, HttpServletResponse response, Model model){
-		
-		return "admin/login";
-	}
 	
-	@RequestMapping(value="/checkLogin", method=RequestMethod.GET) //
-	public String adminCheckLogin(HttpServletRequest request, HttpServletResponse response, Model model){
-		
-		return "admin/edit";
-		
-	}
 	
 /*	private NameService nameService;
 	@Autowired
