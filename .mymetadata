@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="zhimaWeb1"
+  name="zhimaWeb"
   id="myeclipse.1442491634169"
   context-root="/zhimaWeb"
   j2ee-spec="6.0"
-  archive="zhimaWeb1.war">
+  archive="zhimaWeb.war">
   <attributes>
     <attribute name="webrootdir" value="src/main/webapp" />
   </attributes>

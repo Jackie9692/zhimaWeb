@@ -1,0 +1,271 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 0;
+    margin: 0 auto;
+    /*background:  url(../image/background.jpg) ;*/
+}
+.row{
+    margin-top:50px;
+}
+
+.bs-docs-example{
+    width: 1200px;
+}
+.container{
+    width: 1200px;
+    height: auto;
+}
+.row-fluid {
+    width: 1200px;
+    height: 30000px;
+    margin: 0 auto;
+}
+.span3 {
+    width: 270px;
+}
+ul{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.nav {
+    list-style: none;
+}
+.nav-list {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul.nav.nav-list.bs-docs-sidenav{
+    width: 258px;
+    height: auto;
+    margin: 30px 0 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px
+}
+li{
+    line-height: 20px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.bs-docs-sidenav .icon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25;
+}
+.bs-docs-sidenav > li:first-child > a{
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    z-index: 2;
+    padding: 9px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+.nav-list>.active>a, .nav-list>.active>a:hover, .nav-list>.active>a:focus{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    background-color: #08c;
+}
+.nav-list>li>a, .nav-list .nav-header {
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+.bs-docs-sidenav > li > a {
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+}
+a:-webkit-any-link {
+    cursor: auto;
+}
+.affix{
+    position: fixed;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 1px;
+    -webkit-margin-end: 0px;
+    padding-left: 1em;
+    text-indent: 2em;
+}
+
+.text {
+    line-height: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #7a7a7a;
+}
+table{
+    margin: 0px;
+}
+.table-bordered {
+    border: 1px solid #7D6568;
+    border-collapse: separate;
+    border-left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+/*
+ * Global add-ons
+ */
+
+/*.navbar-nav {*/
+    /*float: left;*/
+    /*margin: 0;*/
+    /*background: #BEBEBA;*/
+/*}*/
+/*.container-header{*/
+    /*box-sizing: border-box;*/
+    /*padding: auto;*/
+    /*margin: auto;*/
+    /*border: auto;*/
+    /*display: block;*/
+    /*clear: both;*/
+    /*height: 260px;*/
+/*}*/
+/*.container-fluid{*/
+    /*padding: 0;*/
+/*background:  url{../../navigation/navbar.jpg};*/
+/*}*/
+/*.sub-header {*/
+    /*padding-bottom: 10px;*/
+    /*border-bottom: 1px solid #eee;*/
+
+/*}*/
+/*.row {*/
+    /*margin: 0;*/
+/*}*/
+/*/!**/
+ /** Top navigation*/
+ /** Hide default border to remove 1px line.*/
+ /**!/*/
+/*.navbar-fixed-top {*/
+    /*margin: 0px 104px 0px 104px;*/
+    /*border: 0;*/
+    /*height: 260px;*/
+/*}*/
+/*.navbar-collapse.collapse{*/
+    /*width: 1695px;*/
+    /*padding: 0;*/
+/*}*/
+
+/*/!**/
+ /** Sidebar*/
+ /**!/*/
+
+/*/!* Hide for mobile, show later *!/*/
+/*.sidebar {*/
+    /*display: none;*/
+/*}*/
+/*@media (min-width: 275px) {*/
+    /*.sidebar {*/
+        /*position: ;*/
+        /*top: 1px;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*z-index: 1000;*/
+        /*display: block;*/
+        /*padding: 20px;*/
+        /*overflow-x: hidden;*/
+        /*overflow-y: auto; /!* Scrollable contents if viewport is shorter than content. *!/*/
+        /*background-color: #f5f5f5;*/
+        /*border-right: 1px solid #eee;*/
+    /*}*/
+/*}*/
+
+/*/!* Sidebar navigation *!/*/
+/*.nav-sidebar {*/
+    /*margin-right: -21px; /!* 20px padding + 1px border *!/*/
+    /*margin-bottom: 20px;*/
+    /*margin-left: -20px;*/
+/*}*/
+/*.nav-sidebar > li > a {*/
+    /*padding-right: 20px;*/
+    /*padding-left: 20px;*/
+/*}*/
+/*.nav-sidebar > .active > a,*/
+/*.nav-sidebar > .active > a:hover,*/
+/*.nav-sidebar > .active > a:focus {*/
+    /*color: #fff;*/
+    /*background-color: #428bca;*/
+/*}*/
+
+
+/*/!**/
+ /** Main content*/
+ /**!/*/
+
+/*.main {*/
+    /*padding: 20px;*/
+/*}*/
+/*@media (min-width: 825px) {*/
+    /*.main {*/
+        /*margin: ;*/
+        /*position: ;*/
+        /*top: ;*/
+        /*padding-top: 20px;*/
+        /*padding-right: 40px;*/
+        /*padding-left: 40px;*/
+    /*}*/
+/*}*/
+/*.main .page-header {*/
+    /*margin-top: 0;*/
+/*}*/
+/*.col-md-offset-3{*/
+    /*margin-left: 0;*/
+/*}*/
+
+/*/!**/
+ /** Placeholder dashboard ideas*/
+ /**!/*/
+
+/*.placeholders {*/
+    /*margin-bottom: 30px;*/
+    /*text-align: center;*/
+/*}*/
+/*.placeholders h4 {*/
+    /*margin-bottom: 0;*/
+/*}*/
+/*.placeholder {*/
+    /*margin-bottom: 20px;*/
+/*}*/
+/*.placeholder img {*/
+    /*display: inline-block;*/
+    /*border-radius: 50%;*/
+/*}*/
+
+
+/*.bs-docs-example{*/
+    /*position: relative;*/
+    /*margin: 15px 0;*/
+    /*padding: 39px 19px 14px;*/
+    /*background-color: #fff;*/
+    /*border: 1px solid #ddd;*/
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+/*}*/

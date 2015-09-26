@@ -20,7 +20,7 @@ public class StaticController {
 	@RequestMapping(value="/navigate", method=RequestMethod.GET)//首页导航
 	public String navigate(HttpServletRequest request, HttpServletResponse response){
 		
-		return "forward:static/welcome";
+		return "modules/navigate";
 	}
 	
 	@RequestMapping(value="/aboutus", method=RequestMethod.GET)//关于我们
@@ -32,7 +32,7 @@ public class StaticController {
 	@RequestMapping(value="/mentor/init", method=RequestMethod.GET)//人才导师列表
 	public String mentorInit(HttpServletRequest request, HttpServletResponse response){
 		
-		return "mentorInit";
+		return "modules/teacher";
 	}
 	
 	
@@ -55,7 +55,7 @@ public class StaticController {
 	public String welfareDetail(HttpServletRequest request, HttpServletResponse response){
 		
 		
-		return "welfareCoperateDetail" + request.getParameter("id");
+		return "modules/community";
 	}
 	
 	@RequestMapping(value="/volunteer/init", method=RequestMethod.GET)//志愿者报名列表
@@ -69,7 +69,7 @@ public class StaticController {
 	public String volunteerDetail(HttpServletRequest request, HttpServletResponse response){
 		
 		
-		return "volunteerDetail" + request.getParameter("id");
+		return "modules/volunteer";
 	}
 	
 	
