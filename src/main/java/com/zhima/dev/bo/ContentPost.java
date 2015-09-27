@@ -25,6 +25,7 @@ public class ContentPost implements java.io.Serializable {
 	private Integer id;
 	private Integer cateId;
 	private String title;
+	private String content;
 	private String publisher;
 	private Date createDate;
 	private Date updateDate;
@@ -105,6 +106,7 @@ public class ContentPost implements java.io.Serializable {
 		this.updateDate = updateDate;
 	}
 
+	@Column(name = "visit_times")
 	public Integer getVisitedTimes() {
 		return visitedTimes;
 	}
@@ -113,14 +115,14 @@ public class ContentPost implements java.io.Serializable {
 		this.visitedTimes = visitedTimes;
 	}
 
+	@Column(name = "content")
+	public String getContent() {
+		return content;
+	}
 
-	
-
-
-
-
-	
-	
+	public void setContent(String content) {
+		this.content = content;
+	}
 
 
 }

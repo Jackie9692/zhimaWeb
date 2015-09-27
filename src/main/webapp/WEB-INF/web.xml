@@ -6,9 +6,11 @@
 
 	<context-param>
         <param-name>rootName</param-name>
-        <param-value>huanglianglei</param-value>
+        <param-value>admin</param-value>
+	</context-param>
+	<context-param>
         <param-name>passWord</param-name>
-        <param-value>lianglei</param-value>
+        <param-value>1234</param-value>
 	</context-param>
 	<!-- Spring 应用上下文，理解层次化的ApplicationContext -->
 	<context-param>

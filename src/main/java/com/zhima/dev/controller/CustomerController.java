@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("/customer")
 public class CustomerController {
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET) //跳转到管理员登陆界面
@@ -24,6 +24,9 @@ public class CustomerController {
 		return "admin/edit";
 		
 	}
+	
+	
+	
 	
 /*	private NameService nameService;
 	@Autowired

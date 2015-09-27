@@ -19,8 +19,18 @@
 </script>
 </head>
 <body>
-	<c:forEach items="${list}" var="item">
-		<div>${item.id}</div>
-	</c:forEach>
+	<div style="margin:40px auto; width:300px; background-color：grey">
+		<form style="width: 200px;" action="${ctx}/admin/checkLogin" method="post">
+		  <fieldset>
+		    <legend>管理员登陆</legend>
+		    <label>用户名：</label>
+		    <input name="username" type="text" placeholder="请输入用户名">
+		   	<label>密码：</label>
+		    <input name="psw" type="password" placeholder="请输入密码">
+		    <button type="submit" class="btn">Submit</button>
+		  </fieldset>
+		</form>
+		<div>${msg}</div>		
+	</div>
 </body>
 </html>
