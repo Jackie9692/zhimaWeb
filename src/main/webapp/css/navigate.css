@@ -135,6 +135,15 @@ table{
 	width: 400px;
 	height: auto;
 }
+h3 small{
+    font-size: 25px;
+    font-family: Candara;
+}
+em{
+	font-size: 25px;
+    color: #7f7f7f;
+    font-style: normal;
+}
 
 /*
  * Global add-ons

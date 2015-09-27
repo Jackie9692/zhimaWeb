@@ -101,9 +101,9 @@
     </style>
   </head>
 
-  <body >
+  <body data-spy="scroll" data-target=".jianting">
 	<%@ include file="/WEB-INF/views/include/navigatorList.jsp"%>
-    <div class="container-fluid">
+    <div class="container-fluid jianting">
       <div class="row-fluid">
         <div class="span3">
           <ul class="nav nav-list bs-docs-sidenav affix" id="navMaodian">
@@ -120,7 +120,7 @@
                 <tr>
                   <%-- <th colspan="1"><span>${thead}</sapn><span>${dateStr}</span><span>${weekStr}</span></th> --%>
                   <th colspan="1">
-					 <h3>${thead}<small>${dateStr}</small><em>${weekStr}</em></h3>               
+					 <h3>${thead}&nbsp;&nbsp;<small>${dateStr}</small><em>${weekStr}</em></h3>               
                   </th>
                 </tr>
               </thead>
@@ -134,12 +134,22 @@
               </tbody>
             </table>
             
-			<div class="text-right">
-				<span>第<div id="minusPage" class="icon-minus-sign paganationLabel"></div></span>
-				<span><input id="pageNo" value="${pageResult.pageNo}"></span>
-				<span><div id="addPage" class="icon-plus-sign paganationLabel"></div>页</span>&nbsp;&nbsp;
-				<span>总共<em><span class="badge">${pageNumber}</span></em>页</span>
-			</div>			
+			<h4 class="text-right">
+				<ul class="pager">
+ 					 <li class="previous" id="minusPage">
+   						<a  href="#">&larr; 上一页</a>
+ 					 </li>
+ 					 
+ 					 <li class="next" id="addPage" >
+   						<a  href="#">下一页 &rarr;</a>
+ 					 </li>
+					<span>第</span>
+					<span><input id="pageNo" value="${pageResult.pageNo}"></span>
+					<span>页</span>&nbsp;&nbsp;
+					<span>总共<em><span class="badge">${pageNumber}</span></em>页</span>
+					
+				</ul>
+			</h4>			
       	</div>
     </div>
 	<%@ include file="/WEB-INF/views/include/footer.jsp"%>
