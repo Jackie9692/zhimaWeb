@@ -36,7 +36,7 @@
 							dolor id nibh ultricies vehicula ut id elit.</p>
 					</div>
 					<div class="clickIn">
-						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.jpg"/></a>
+						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.png" /></a>
 					</div>					
 				</div>
 				<div class="item">
@@ -48,7 +48,7 @@
 						 It can be used to water the flower or to wash other things.</p>
 					</div>
 					<div class="clickIn">
-						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.jpg"/></a>
+						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.png"/></a>
 					</div>					
 				</div>
 				<div class="item">
@@ -61,7 +61,7 @@
 					</div>
 					
 					<div class="clickIn">
-						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.jpg"/></a>
+						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.png"/></a>
 					</div>
 				</div>
 			</div>

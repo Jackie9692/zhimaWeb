@@ -20,7 +20,7 @@ public class StaticController {
 	@RequestMapping(value="/navigate", method=RequestMethod.GET)//首页导航
 	public String navigate(HttpServletRequest request, HttpServletResponse response){
 		
-		return "modules/navigate";
+		return "modules/aboutUs";
 	}
 	
 	@RequestMapping(value="/aboutus", method=RequestMethod.GET)//关于我们
@@ -78,6 +78,21 @@ public class StaticController {
 		
 		
 		return "modules/testUeditor";
+	}
+	@RequestMapping(value="/English", method=RequestMethod.GET)//欢迎界面
+	public String EnglishPage(HttpServletRequest request, HttpServletResponse response){
+		
+		return "modules/loading";
+	}
+	@RequestMapping(value="/contact", method=RequestMethod.GET)//欢迎界面
+	public String contactPage(HttpServletRequest request, HttpServletResponse response){
+		
+		return "modules/loading";
+	}
+	@RequestMapping(value="/bbs", method=RequestMethod.GET)//欢迎界面
+	public String bbsPage(HttpServletRequest request, HttpServletResponse response){
+		
+		return "modules/loading";
 	}
 	
 	@RequestMapping(value="/imageUpload", method=RequestMethod.POST)//ueditor

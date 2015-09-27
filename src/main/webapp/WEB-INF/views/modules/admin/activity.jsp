@@ -10,7 +10,7 @@
 
 	<meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="${ctx}/images/pic16x16dpi.png">
+    <link rel="icon" href="${ctx}/images/logo.png">
     <title>会员活动</title>
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctxCss}/navigate.css" rel="stylesheet">

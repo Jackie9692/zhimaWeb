@@ -3,7 +3,7 @@
   <div id="navbar-example" class="navbar navbar-static">
     <div class="navbar-inner">
       <div class="container" style="width: auto;">
-        <a class="brand" href="#">芝麻开花</a>
+        <a class="brand" href="${ctx}/static/welcome">芝麻开花</a>
         <ul class="nav" role="navigation">
           <li class="dropdown">
             <a id="drop1" href="${ctx}/static/navigate" role="button" class="dropdown-toggle" data-toggle="dropdown">关于我们 <b class="caret"></b></a>
@@ -51,6 +51,15 @@
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/volunteer/detail#zhongmei">中美小伙伴共同成长计划</a></li>
             </ul>
           </li>
+
+          <ul class="nav pull-right">
+			<li id="fat-menu" class="dropdown">
+				<li><a href="${ctx}/static/navigate">中文</a></li>
+				<li><a href="${ctx}/static/English" target="_blank">English</a></li>
+				<li><a href="${ctx}/static/contact" target="_blank">联系我们</a></li>
+				<li><a href="${ctx}/static/bbs" target="_blank">BBS</a></li>
+			</li>
+          </ul>
         </ul>
       </div>
     </div>

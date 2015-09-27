@@ -18,11 +18,12 @@ body {
 .container{
     width: 1200px;
     height: auto;
+   
 }
 .row-fluid {
     width: 1200px;
-    height: 30000px;
     margin: 0 auto;
+    min-height:766px;
 }
 .span3 {
     width: 270px;
@@ -129,6 +130,12 @@ table{
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
+.picSize{
+	width: 400px;
+	height: auto;
+}
+
 /*
  * Global add-ons
  */
@@ -269,3 +276,12 @@ table{
     /*-moz-border-radius: 4px;*/
     /*border-radius: 4px;*/
 /*}*/
+
+.bottom {
+    height: 150px;
+    width: 100%;
+    background: rgba(139, 152, 146, 0.21);;
+    margin-top: 24px;
+    text-align: center;
+    padding-top: 15px;
+}
