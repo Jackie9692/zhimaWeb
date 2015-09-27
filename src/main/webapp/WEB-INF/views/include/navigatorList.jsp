@@ -41,7 +41,6 @@
             <a href="${ctx}/static/welfareCoperate/detail" id="drop5" role="button" class="dropdown-toggle" data-toggle="dropdown">公益合作<b class="caret"></b></a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/welfareCoperate/detail#gongyi">久牵志愿者服务社简介</a></li>
-             
             </ul>
           </li>
           <li class="dropdown">
