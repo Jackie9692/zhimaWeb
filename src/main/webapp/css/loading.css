@@ -1,7 +1,3 @@
-.back{
-		display: block;
-          body {background-image: url(${ctx}/images/backgroundImg1.jpg);}
-}
 
 .load {
     position: absolute;

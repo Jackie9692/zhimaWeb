@@ -22,21 +22,13 @@
 
     <script src="${ctxStatic}/jQuery/jquery-1.9.1.min.js"></script>
     <script src="${ctxStatic}/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-	<style type="text/css">
-		.back{
-			display: block;
-	        background-image: url(${ctx}/images/backgroundImg1.jpg);  
-	        
-		}		
-	</style>
-
-
+	
 
   </head>
 
   <body>
-    <div class="row-fluid">
-    
+   <div class="carousel-inner">
+    	<img  src="${ctx}/images/backgroundImg1.jpg" >
     	<div class="load"  >
     		<img class="transparent_class" src="${ctx}/images/load.bmp"   >
     		<h5 class="loadSize">建设中</h5>
