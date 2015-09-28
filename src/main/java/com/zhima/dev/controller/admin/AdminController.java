@@ -1,7 +1,10 @@
 package com.zhima.dev.controller.admin;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import com.zhima.base.util.ContentType;
@@ -132,16 +136,51 @@ public class AdminController {
 		return "modules/admin/addPost";
 	}
 	
-	@RequestMapping(value = "/post/addSave", method = RequestMethod.GET) // 创建保存
-	public String adminAddSave(HttpServletRequest request, HttpServletResponse response, Model model) {
+	@RequestMapping(value = "/post/addSave", method = RequestMethod.POST) // 创建保存
+	@ResponseBody
+	public Map adminAddSave(HttpServletRequest request, HttpServletResponse response, Model model) {
+		Map map = new HashMap();
+		map.put("loginStatus", true);
+		map.put("success", true);
+		
+		
 		boolean login = validateLogin(request);
 		if(!login){
 			String msg = "请重新登录";
 			model.addAttribute("msg", msg);
-			return "modules/admin/login";
+			map.put("loginStatus", true);
+			return map;
 		}
 		
-		return "modules/admin/activityForeshow/add";
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
+		String cateId = request.getParameter("msgType");
+		
+		
+		
+		if(StringUtils.isEmpty(title)||StringUtils.isEmpty(content)||StringUtils.isEmpty(cateId)){
+			map.put("success", false);
+			return map;
+		}
+		
+		//改变post
+		ContentPost contentPost = new ContentPost();
+		contentPost.setCateId(Integer.parseInt(cateId));
+		contentPost.setTitle(title);
+		contentPost.setContent(content);
+		
+		Timestamp updateDate = new Timestamp(new Date().getTime());
+		contentPost.setUpdateDate(updateDate);
+		contentPost.setCreateDate(updateDate);
+		
+		String userNameString = (String) request.getSession().getAttribute("userName");
+		contentPost.setPublisher(userNameString);
+		
+		contentPost.setVisitedTimes(0);
+		
+		postService.update(contentPost);
+		
+		return map;
 	}
 	
 	@RequestMapping(value = "/post/delete", method = RequestMethod.GET) //删除
@@ -153,7 +192,12 @@ public class AdminController {
 			return "modules/admin/login";
 		}
 		
-		return "modules/admin/activityForeshow/add";
+		String id = request.getParameter("id");
+		if(StringUtils.isEmpty(id)) return "error/404";
+		
+		postService.delete(id);
+		
+		return "redirect:/admin/memberAcitivty/foreshowList";
 	}
 	
 	@RequestMapping(value = "/post/edit", method = RequestMethod.GET) //编辑
@@ -165,22 +209,59 @@ public class AdminController {
 			return "modules/admin/login";
 		}
 		String id = request.getParameter("id");
-		if(StringUtils.isEmpty(id)) return "error/403";
+		if(StringUtils.isEmpty(id)) return "error/404";
 		
-		postService.delete(id);
-		return "modules/admin/activityForeshow/add";
+		ContentPost contentPost = postService.findById(id);
+		
+		String typeString = "";
+		if(contentPost != null){
+			typeString = getTypeString(contentPost.getCateId());
+		}
+		model.addAttribute("contentPost", contentPost);	
+		model.addAttribute("typeString", typeString);	
+		return "modules/admin/editPost";
 	}
 	
-	@RequestMapping(value = "/editSave", method = RequestMethod.GET) //编辑保存
-	public String adminEditSave(HttpServletRequest request, HttpServletResponse response, Model model) {
+	@RequestMapping(value = "/post/editSave", method = RequestMethod.POST) //编辑保存
+	@ResponseBody
+	public Map adminEditSave(HttpServletRequest request, HttpServletResponse response, Model model) {
+		Map map = new HashMap();
+		map.put("loginStatus", true);
+		map.put("success", true);
+		
+		
 		boolean login = validateLogin(request);
 		if(!login){
 			String msg = "请重新登录";
 			model.addAttribute("msg", msg);
-			return "modules/admin/login";
+			map.put("loginStatus", true);
+			return map;
 		}
 		
-		return "modules/admin/activityForeshow/add";
+		String id = request.getParameter("id");
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
+		
+		if(StringUtils.isEmpty(id) || StringUtils.isEmpty(title) || StringUtils.isEmpty(content)){
+			map.put("success", false);
+			return map;
+		}
+		
+		//改变post
+		ContentPost contentPost = postService.findById(id);
+		if(contentPost == null){
+			map.put("success", false);
+			return map;
+		}
+		
+		contentPost.setTitle(title);
+		contentPost.setContent(content);
+		Timestamp updateDate = new Timestamp(new Date().getTime());
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		contentPost.setUpdateDate(updateDate);
+		
+		postService.update(contentPost);
+		return map;
 	}
 	
 	
@@ -234,6 +315,28 @@ public class AdminController {
 		model.addAttribute("pageResult", pageResult);
 		model.addAttribute("pageNumber", pageNumber);
 		model.addAttribute("type", postType);
+	}
+	
+	public String getTypeString(int type){
+		String typeString = "";
+		switch (type) {
+		case 1:
+			typeString = "活动预告及报名";
+			break;
+		case 2:
+			typeString = "往期回顾";
+			break;
+		case 3:
+			typeString = "好文推荐";
+			break;
+		case 4:
+			typeString = "书籍推荐";
+			break;
+		default:
+			break;
+		}
+	
+		return typeString;
 	}
 
 }

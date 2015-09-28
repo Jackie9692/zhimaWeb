@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.hibernate.SQLQuery;
 import org.hibernate.transform.Transformers;
-import org.hibernate.type.DateType;
 import org.hibernate.type.IntegerType;
 import org.hibernate.type.StringType;
 import org.hibernate.type.TimestampType;
@@ -42,8 +41,8 @@ public class ContentPostDao extends BaseDao{
 				.addScalar("cateId", IntegerType.INSTANCE)
 				.addScalar("title", StringType.INSTANCE)
 				.addScalar("publisher", StringType.INSTANCE)
-				.addScalar("createDate", DateType.INSTANCE)
-				.addScalar("updateDate", DateType.INSTANCE)
+				.addScalar("createDate", TimestampType.INSTANCE)
+				.addScalar("updateDate", TimestampType.INSTANCE)
 				.addScalar("visitedTimes", IntegerType.INSTANCE);
 
 

@@ -1,12 +1,13 @@
 package com.zhima.dev.bo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "content_post", catalog = "zhimaweb")
@@ -22,13 +23,17 @@ public class ContentPost implements java.io.Serializable {
 	  `segment1` varchar(255) DEFAULT NULL COMMENT '备用字段',
 	  `segement2` varchar(255) DEFAULT NULL COMMENT '备用字段',*/
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private Integer cateId;
 	private String title;
 	private String content;
 	private String publisher;
-	private Date createDate;
-	private Date updateDate;
+	private Timestamp createDate;
+	private Timestamp updateDate;
 	private Integer visitedTimes;
 	
 	// Constructors
@@ -38,7 +43,7 @@ public class ContentPost implements java.io.Serializable {
 	}
 	
 	public ContentPost(Integer cateId, String title, String publisher,
-			Date createDate, Date updateDate, Integer visitedTimes) {
+			Timestamp createDate, Timestamp updateDate, Integer visitedTimes) {
 		super();
 		this.cateId = cateId;
 		this.title = title;
@@ -88,24 +93,6 @@ public class ContentPost implements java.io.Serializable {
 		this.publisher = publisher;
 	}
 
-	@Column(name = "create_date")
-	public Date getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
-
-	@Column(name = "update_date")
-	public Date getUpdateDate() {
-		return updateDate;
-	}
-
-	public void setUpdateDate(Date updateDate) {
-		this.updateDate = updateDate;
-	}
-
 	@Column(name = "visit_times")
 	public Integer getVisitedTimes() {
 		return visitedTimes;
@@ -124,5 +111,24 @@ public class ContentPost implements java.io.Serializable {
 		this.content = content;
 	}
 
+	@Column(name = "create_date")
+	public Timestamp getCreateDate() {
+		return createDate;
+	}
 
+	public void setCreateDate(Timestamp createDate) {
+		this.createDate = createDate;
+	}
+
+	@Column(name = "update_date")
+	public Timestamp getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(Timestamp updateDate) {
+		this.updateDate = updateDate;
+	}
+
+	
+	
 }

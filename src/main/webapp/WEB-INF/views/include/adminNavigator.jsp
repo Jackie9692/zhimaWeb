@@ -3,7 +3,7 @@
      <div id="navbar-example" class="navbar navbar-static">
        <div class="navbar-inner">
          <div class="container" style="width: auto;">
-           <a class="brand" href="#">芝麻开花</a>
+           <a class="brand" href="${ctx}/static/welcome" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="返回首页">芝麻开花</a>
            <ul class="nav" role="navigation">
              <li class="dropdown">
                <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">会员活动<b class="caret"></b></a>

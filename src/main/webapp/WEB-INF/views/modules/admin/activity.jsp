@@ -112,6 +112,7 @@
               <a href="${ctx}/admin/memberAcitivty/foreshowList"><i class="icon-chevron-right"></i>活动预告及报名</a>
             </li>
             <li class=""><a href="${ctx}/admin/memberAcitivty/reviewList"> <i class="icon-chevron-right"></i>往期回顾</a></li>
+            <li class=""><a href="${ctx}/admin/post/add" target="_blank"> <i class="icon-chevron-right"></i>我要发布</a></li>
           </ul>
         </div>
         <div class="span9" style="boder: 1px solid grey">
@@ -130,7 +131,7 @@
 	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.id}${each.title}&nbsp;&nbsp;${each.createDate}</p></a> </td>
 	                 <td colspan="1" style="line-height: 50px">
 		                 <span><a href="${ctx}/admin/post/edit?id=${each.id}">编辑</a></span>&nbsp;&nbsp;
-		                 <span><a href="${ctx}/content/post/delete?id=${each.id}" onClick="return confirm('确定删除?');">删除</a></span>
+		                 <span><a href="${ctx}/admin/post/delete?id=${each.id}" onClick="return confirm('确定删除?');">删除</a></span>
 		             </td>
 	              </tr>		            
 	          </c:forEach>
