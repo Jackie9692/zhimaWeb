@@ -109,9 +109,9 @@
           <ul class="nav nav-list bs-docs-sidenav affix" id="navMaodian">
             <li class=""><a href="">芝麻推荐</a></li>
             <li class="">
-              <a href="${ctx}/content/recommend/articleList"><i class="icon-chevron-right"></i>好文分享</a>
+              <a href="${ctx}/admin/recommend/articleList"><i class="icon-chevron-right"></i>好文分享</a>
             </li>
-            <li class=""><a href="${ctx}/content/recommend/bookList"><i class="icon-chevron-right"></i>书籍推荐</a></li>
+            <li class=""><a href="${ctx}/admin/recommend/bookList"><i class="icon-chevron-right"></i>书籍推荐</a></li>
           </ul>
         </div>
         <div class="span9" style="boder: 1px solid grey">

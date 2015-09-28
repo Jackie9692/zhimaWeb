@@ -11,7 +11,7 @@
 	<meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="${ctx}/images/logo.png">
-    <title>芝麻推荐</title>
+    <title>阅读详情</title>
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctxCss}/navigate.css" rel="stylesheet">
 	<link href="${ctxCss}/postDetail.css" rel="stylesheet">

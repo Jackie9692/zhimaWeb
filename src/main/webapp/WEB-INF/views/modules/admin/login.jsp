@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>EIC&nbsp;芝麻开发全人格教育基金</title>
+<title>EIC&nbsp;后台登陆</title>
 <link rel="icon" href="${ctx}/images/favicon.ico" type="image/x-icon" /> 
 <link rel="shortcut icon" href="/test.ico" type="image/x-icon" />
 <base href="${ctx}">
@@ -24,7 +24,7 @@
 		  <fieldset>
 		    <legend>管理员登陆</legend>
 		    <label>用户名：</label>
-		    <input name="username" type="text" placeholder="请输入用户名">
+		    <input name="username" type="text" placeholder="请输入用户名"> 
 		   	<label>密码：</label>
 		    <input name="psw" type="password" placeholder="请输入密码">
 		    <button type="submit" class="btn">Submit</button>
