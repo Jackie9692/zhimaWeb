@@ -40,7 +40,7 @@ public class StaticController {
 	public String mentorDetail(HttpServletRequest request, HttpServletResponse response){
 		
 		
-		return "teachers/tea_" + request.getParameter("name");
+		return "modules/teachers/tea_" + request.getParameter("name");
 		
 	}
 	

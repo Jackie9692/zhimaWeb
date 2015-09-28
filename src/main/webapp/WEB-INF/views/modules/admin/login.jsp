@@ -23,7 +23,7 @@
 	<div class="carousel-inner">
     	<img  src="${ctx}/images/backgroundImg2.jpg" >
 		<div class="load" align="center">
-			<form style="width: 230px; border-width: 2px; border-color: #000;" action="${ctx}/admin/checkLogin" >
+			<form  class="border-style-hu"  action="${ctx}/admin/checkLogin" method="post">
 			  <fieldset >
 			    <legend class="pull-left">管理员登陆</legend>
 			    <label class="pull-left">用户名：</label>
