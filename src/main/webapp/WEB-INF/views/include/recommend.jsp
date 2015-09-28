@@ -64,10 +64,10 @@
       }
       function initPaganationBar(){
       	if(pageNo <= 1) {
-      		$("#minusPage").addClass("hide");
+      		$("#minusPage").hide();
       	}
       	if(pageNo >= pageNumber){
-      		$("#addPage").addClass("hide");
+      		$("#addPage").hide();
       	}   	
       }
 
@@ -132,12 +132,24 @@
             </table>
             
 			<h4 class="text-right">
-				<span>第<div id="minusPage" class="icon-minus-sign paganationLabel"></div><span><input id="pageNo" value="${pageResult.pageNo}"></span><div id="addPage" class="icon-plus-sign paganationLabel"></div>页</span>
-				<span>总共${pageNumber}页</span>
-			</h4>			
+				<ul class="pager">
+ 					 <li  id="minusPage" class="previous" >
+   						<a  href="#">&larr; 上一页</a>
+ 					 </li>
+ 					 
+ 					 <li class="next" id="addPage" >
+   						<a  href="#">下一页 &rarr;</a>
+ 					 </li>
+					<span>第</span>
+					<span><input id="pageNo" value="${pageResult.pageNo}"></span>
+					<span>页</span>&nbsp;&nbsp;
+					<span>总共<em><span class="badge">${pageNumber}</span></em>页</span>
+					
+				</ul>
+			</h4>						
       	</div>
     </div>
-    <div id="test"><%@ include file="/WEB-INF/views/include/footer.jsp"%></div>
+    	<%@ include file="/WEB-INF/views/include/footer.jsp"%>
 	
 
   </body>

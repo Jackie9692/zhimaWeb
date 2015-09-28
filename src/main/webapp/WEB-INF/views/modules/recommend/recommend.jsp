@@ -148,10 +148,9 @@
 				</ul>
 			</h4>					
       	</div>
+      
     </div>
-    <div id="test"><%@ include file="/WEB-INF/views/include/footer.jsp"%></div>
-	
-
+    	<%@ include file="/WEB-INF/views/include/footer.jsp"%>
   </body>
 </html>
 
