@@ -33,7 +33,7 @@
 		#mainBody{
 			width: 948px;
 			margin: 0 auto;
-			padding: 0 10px;
+			padding: 30px 10px 50px;
 			background-color: white;
 		}
 		.btnGroups{
@@ -42,6 +42,7 @@
 		}
 		.btnGroupsDiv{
 			position: relative;
+			right: 30px;
 		}
     </style>
     <script type="text/javascript">

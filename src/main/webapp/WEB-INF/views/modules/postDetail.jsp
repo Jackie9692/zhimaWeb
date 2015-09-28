@@ -35,7 +35,7 @@
 		         </strong>
 		     </div>
 		     <div  class="blog_tit_con pull-right pull-bottom" style="display: block;">
-			    			  <span id="pubTime" >发布时间：${post.createDate}</span>
+			    			  <span id="pubTime" >发布时间：${post.createDate.toString().split(" ")[0]}</span>
 			                  <span id="readNum" >阅读(${post.visitedTimes})</span>
 		     </div>
 		</div>

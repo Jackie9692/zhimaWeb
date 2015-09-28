@@ -33,7 +33,7 @@
 		#mainBody{
 			width: 948px;
 			margin: 0 auto;
-			padding: 0 10px;
+			padding: 30px 10px 50px;
 			background-color: white;
 		}
 		.btnGroups{
@@ -42,6 +42,7 @@
 		}
 		.btnGroupsDiv{
 			position: relative;
+			right: 30px;
 		}
     </style>
     <script type="text/javascript">
@@ -57,11 +58,11 @@
     			var content = ue.getContent();
 				if(title == ""){
 					alert("标题不能为空！");
-					return -1；
+					return -1;
 				}
 				if(content == ""){
 					alert("内容不能为空！");
-					return -1；					
+					return -1;					
 				}
 				
 				$.ajax({
@@ -96,8 +97,6 @@
     	
     </script>    
 	</head>
-	
-<<<<<<< Updated upstream
 </script>
 </head>
 	<body>
