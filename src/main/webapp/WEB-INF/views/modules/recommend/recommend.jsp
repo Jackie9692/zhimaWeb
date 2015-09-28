@@ -118,13 +118,13 @@
 		 	<table class="table table-striped">
               <thead>
                 <tr>
-                  <th colspan="1"><h3>${thead}&nbsp;&nbsp;<small>${dateStr}</small><em>${weekStr}</em></h3>/th>
+                  <th colspan="1"><h3>${thead}&nbsp;&nbsp;<small>${dateStr}</small><em>${weekStr}</em></h3></th>
                 </tr>
               </thead>
               <tbody>
 	          <c:forEach var="each" items="${pageResult.voList}">
 		          <tr>
-	                 <td colspan="3"><a href="#?id=${each.id}"><p>${each.id}${each.title}</p></a> </td>
+	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.id}${each.title}</p></a> </td>
 	                 <td colspan="1"><h5>${each.createDate}</h5></td>
 	              </tr>		            
 	          </c:forEach>
