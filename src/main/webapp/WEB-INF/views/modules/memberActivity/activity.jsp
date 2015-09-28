@@ -128,7 +128,7 @@
               <tbody>
 	          <c:forEach var="each" items="${pageResult.voList}">
 		          <tr>
-	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.title}</p></a> </td>
+	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank" ><p>${each.title}</p></a> </td>
 	                 <td colspan="1"><p>${each.createDate.toString().split(" ")[0]}</p></td>
 	              </tr>		            
 	          </c:forEach>
