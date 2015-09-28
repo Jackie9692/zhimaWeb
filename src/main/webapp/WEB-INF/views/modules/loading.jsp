@@ -14,23 +14,29 @@
 
     <title>关于我们</title>
 
-
+	  <style type="text/css">
+          body {background-image: url(${ctx}/images/backgroundImg1.jpg);}
+      </style>
 
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctxCss}/navigate.css" rel="stylesheet">
-
+ 	<link href="${ctxCss}/loading.css" rel="stylesheet">
 
     <script src="${ctxStatic}/jQuery/jquery-1.9.1.min.js"></script>
     <script src="${ctxStatic}/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
-  
+
+
+
   </head>
 
-  <body data-spy="scroll" data-target=".jianting">
-   
-
-   
-    <div>正在建设中。。。。。。。。</div>
+  <body  >
+    <div class="row-fluid">
+    	<div class="load"  >
+    		<img class="transparent_class" src="${ctx}/images/load.bmp"   >
+    		<h5 class="loadSize">建设中</h5>
+    	</div>
+    </div>
 
 	 
   </body>

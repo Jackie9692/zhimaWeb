@@ -40,7 +40,8 @@ public class StaticController {
 	public String mentorDetail(HttpServletRequest request, HttpServletResponse response){
 		
 		
-		return "mentor/person" + request.getParameter("id");
+		return "teachers/tea_" + request.getParameter("name");
+		
 	}
 	
 	

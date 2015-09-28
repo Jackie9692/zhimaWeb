@@ -64,10 +64,10 @@
       }
       function initPaganationBar(){
       	if(pageNo <= 1) {
-      		$("#minusPage").addClass("hide");
+      		$("#minusPage").hide();
       	}
       	if(pageNo >= pageNumber){
-      		$("#addPage").addClass("hide");
+      		$("#addPage").hide();
       	}   	
       }
 

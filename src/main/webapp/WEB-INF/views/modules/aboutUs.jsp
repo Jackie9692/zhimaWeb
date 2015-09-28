@@ -150,8 +150,7 @@
                 <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
                   <tbody>
                   <tr>
-                    <td width="25%" height="120" rowspan="3" align="center">
-                      执行秘书</td>
+                    <td width="25%" height="120" rowspan="3" align="center"> 执行秘书</td>
                     <td  height="40" width="50%" align="center">王瑞锋</td>
                   </tr>
                   <tr>
@@ -181,9 +180,6 @@
                   </tr>
                 </table>
               </div>
-
-
-
             </section>
 
           <section id="faq">
@@ -191,14 +187,28 @@
                 <h1>常见问题</h1>
               </div >
               <div class="text">
-
+              	<h4>EIC芝麻开花的愿景，理念，运作机制，法人，资金来源，财务机制。</h4>
+              		<p><a>问题1：EIC芝麻开花全人格教育基金（以下简称EIC芝麻开花）的愿景?理念？运作机制？法人实体?资金来源？财务机制？</a></p>
+              		<p><a>问题2：EIC芝麻开花的成立背景？</a></p>
+              		<p><a>问题3：EIC芝麻开花区别于学校教育、家庭教育的独特之处是什么？</a></p>
+              </div>
+              <div class="text">
+              	<h4>EIC芝麻开花相关运作流程。</h4>
+              		<p><a>问题1：“利润超出5%到10%部分用于自己孩子的发展和活动以及慈善。”其中的“自己”是指出资人？还是基金本身？</a></p>
+              		<p><a>问题2：会员父母在芝麻开花中的角色、权利、义务？</a></p>
+              		<p><a>问题3：董事会的职责、作用？</a></p>
+              		<p><a>问题4：董事会成员收入。</a></p>
+              		<p><a>问题5：董事会会议召开频率。</a></p>
+              		<p><a>问题3：芝麻开花通过何种方式对青少年会员进行全人格教育培养？</a></p>
+              </div>
+              <div class="text">
+              	<h4>2015年项目展望。</h4>
+              		<p><a>2015年项目展望。</a></p>
               </div>
             </section>
-
       </div>
     </div>
     </div>
-
 	  <%@ include file="/WEB-INF/views/include/footer.jsp"%>
   </body>
 </html>

@@ -64,10 +64,11 @@
       }
       function initPaganationBar(){
       	if(pageNo <= 1) {
-      		$("#minusPage").addClass("hide");
+      		$("#minusPage").hide();
+      		
       	}
       	if(pageNo >= pageNumber){
-      		$("#addPage").addClass("hide");
+      		$("#addPage").hide();
       	}   	
       }
 
@@ -136,7 +137,7 @@
             
 			<h4 class="text-right">
 				<ul class="pager">
- 					 <li class="previous" id="minusPage">
+ 					 <li  id="minusPage" class="previous" >
    						<a  href="#">&larr; 上一页</a>
  					 </li>
  					 
