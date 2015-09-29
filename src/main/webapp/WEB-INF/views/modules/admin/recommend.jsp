@@ -11,7 +11,7 @@
 	<meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="${ctx}/images/logo.png">
-    <title>芝麻推荐</title>
+    <title>芝麻推荐管理</title>
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctxCss}/navigate.css" rel="stylesheet">
 
@@ -50,10 +50,10 @@
       function changeUrl(toPageNum){
       	    var href = ctx;
       		if(type == 3){
-      			href += "/content/recommend/articleList?pageNo=" + toPageNum;
+      			href += "/admin/recommend/articleList?pageNo=" + toPageNum;
       		}
       		if(type == 4){
-      			href += "/content/recommend/bookList?pageNo=" + toPageNum;
+      			href += "/admin/recommend/bookList?pageNo=" + toPageNum;
       		}
       		window.location.href = href;
       }
@@ -74,7 +74,7 @@
       function checkPageNo(toPageNo){
         var msg = "";
         if(toPageNo < 1) {
-          msg = "分页数不能小于0";
+          msg = "分页数不能小于1";
           alert(msg);
           return false;
         }
@@ -99,6 +99,7 @@
     		text-align: center;
     	}
     </style>
+    </style>
   </head>
 
   <body >
@@ -109,23 +110,26 @@
           <ul class="nav nav-list bs-docs-sidenav affix" id="navMaodian">
             <li class=""><a href="">芝麻推荐</a></li>
             <li class="">
-              <a href="${ctx}/content/recommend/articleList"><i class="icon-chevron-right"></i>好文分享</a>
+              <a href="${ctx}/admin/recommend/articleList"><i class="icon-chevron-right"></i>好文分享</a>
             </li>
-            <li class=""><a href="${ctx}/content/recommend/bookList"><i class="icon-chevron-right"></i>书籍推荐</a></li>
+            <li class=""><a href="${ctx}/admin/recommend/bookList"><i class="icon-chevron-right"></i>书籍推荐</a></li>
           </ul>
         </div>
         <div class="span9" style="boder: 1px solid grey">
 		 	<table class="table table-striped">
               <thead>
                 <tr>
-                  <th colspan="1"><span>${thead}</sapn><span>${dateStr}</span><span>${weekStr}</span></th>
+                  <h3>${thead}<small>${dateStr}</small><em>${weekStr}</em></h3>
                 </tr>
               </thead>
               <tbody>
 	          <c:forEach var="each" items="${pageResult.voList}">
 		          <tr>
-	                 <td colspan="3"><a href="#?id=${each.id}"><p>${each.id}${each.title}</p></a> </td>
-	                 <td colspan="1"><h5>${each.createDate}</h5></td>
+	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.title}&nbsp;&nbsp;${each.createDate.toString().split(" ")[0]}</p></a> </td>
+	                 <td colspan="1" style="line-height: 50px">
+		                 <span><a href="${ctx}/admin/post/edit?id=${each.id}" target="_Blank">编辑</a></span>&nbsp;&nbsp;
+		                 <span><a href="${ctx}/admin/post/delete?id=${each.id}" onClick="return confirm('确定删除?');">删除</a></span>
+		             </td>
 	              </tr>		            
 	          </c:forEach>
               </tbody>

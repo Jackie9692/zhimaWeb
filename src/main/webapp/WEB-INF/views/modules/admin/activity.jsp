@@ -11,7 +11,7 @@
 	<meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="${ctx}/images/logo.png">
-    <title>会员活动</title>
+    <title>会员活动管理</title>
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctxCss}/navigate.css" rel="stylesheet">
 
@@ -50,10 +50,10 @@
       function changeUrl(toPageNum){
       	    var href = ctx;
       		if(type == 1){
-      			href += "/content/memberAcitivty/foreshowList?pageNo=" + toPageNum;
+      			href += "/admin/memberAcitivty/foreshowList?pageNo=" + toPageNum;
       		}
       		if(type == 2){
-      			href += "/content/memberAcitivty/reviewList?pageNo=" + toPageNum;
+      			href += "/admin/memberAcitivty/reviewList?pageNo=" + toPageNum;
       		}
       		window.location.href = href;
       }
@@ -74,7 +74,7 @@
       function checkPageNo(toPageNo){
         var msg = "";
         if(toPageNo < 1) {
-          msg = "分页数不能小于0";
+          msg = "分页数不能小于1";
           alert(msg);
           return false;
         }
@@ -119,7 +119,6 @@
 		 	<table class="table table-striped table-condensed">
               <thead>
                 <tr>
-                  <%-- <th colspan="1"><span>${thead}</sapn><span>${dateStr}</span><span>${weekStr}</span></th> --%>
                   <th colspan="1">
 					 <h3>${thead}<small>${dateStr}</small><em>${weekStr}</em></h3>               
                   </th>
@@ -128,9 +127,9 @@
               <tbody>
 	          <c:forEach var="each" items="${pageResult.voList}">
 		          <tr>
-	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.id}${each.title}&nbsp;&nbsp;${each.createDate}</p></a> </td>
+	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.title}&nbsp;&nbsp;${each.createDate.toString().split(" ")[0]}</p></a> </td>
 	                 <td colspan="1" style="line-height: 50px">
-		                 <span><a href="${ctx}/admin/post/edit?id=${each.id}">编辑</a></span>&nbsp;&nbsp;
+		                 <span><a href="${ctx}/admin/post/edit?id=${each.id}" target="_Blank">编辑</a></span>&nbsp;&nbsp;
 		                 <span><a href="${ctx}/admin/post/delete?id=${each.id}" onClick="return confirm('确定删除?');">删除</a></span>
 		             </td>
 	              </tr>		            
