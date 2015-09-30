@@ -1,5 +1,6 @@
 package com.zhima.dev.controller.admin;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -191,6 +192,14 @@ public class AdminController {
 			map.put("success", false);
 			return map;
 		}
+		try {
+			title = new String(title.getBytes(), "utf-8");
+			content = new String(content.getBytes(), "utf-8");
+			cateId = new String(cateId.getBytes(), "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		//改变post
 		ContentPost contentPost = new ContentPost();
@@ -274,6 +283,15 @@ public class AdminController {
 		if(StringUtils.isEmpty(id) || StringUtils.isEmpty(title) || StringUtils.isEmpty(content)){
 			map.put("success", false);
 			return map;
+		}
+		
+		try {
+			id = new String(id.getBytes(), "utf-8");
+			title = new String(title.getBytes(), "utf-8");
+			content = new String(content.getBytes(), "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		//改变post
