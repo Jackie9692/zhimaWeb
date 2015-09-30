@@ -129,6 +129,9 @@
 		          <tr>
 	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank"><p>${each.title}&nbsp;&nbsp;${each.createDate.toString().split(" ")[0]}</p></a> </td>
 	                 <td colspan="1" style="line-height: 50px">
+	                 	 <c:if test="${each.cateId == 1}">
+	                 	 	<span><a href="${ctx}/admin/memberAcitivty/foreshowEnroll?postId=${each.id}" target="_Blank">报名详情</a></span>&nbsp;&nbsp;
+	                 	 </c:if>
 		                 <span><a href="${ctx}/admin/post/edit?id=${each.id}" target="_Blank">编辑</a></span>&nbsp;&nbsp;
 		                 <span><a href="${ctx}/admin/post/delete?id=${each.id}" onClick="return confirm('确定删除?');">删除</a></span>
 		             </td>

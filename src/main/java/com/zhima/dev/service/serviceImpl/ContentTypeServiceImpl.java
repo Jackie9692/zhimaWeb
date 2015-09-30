@@ -22,39 +22,4 @@ public class ContentTypeServiceImpl implements ContentTypeService{
 		return ContentTypeDao.findList();
 	}
 	
-	
-
-
-
-/*	@Override
-	public void setApplicationContext(ApplicationContext arg0)
-			throws BeansException {
-		// TODO Auto-generated method stub
-		
-	}*/
-
-/*	@Override
-	public Person getPerson(int id) {
-		Person person = new Person("Jackie", 23, "Shanghai");
-		return person;
-	}
-
-	@Override
-	public void setApplicationContext(ApplicationContext applicationContext)
-			throws BeansException {
-		this.applicationContext = applicationContext;
-	}
-
-	@Override
-	public void save() {
-		System.out.println(applicationContext.getBean("studentDao").hashCode());
-		System.out.println(applicationContext.getBean("sessionFactory").hashCode());
-		System.out.println("haha");
-	}
-
-	@Override
-	public List<Student> findList() {
-		return studentDao.findList();
-	}*/
-
 }
