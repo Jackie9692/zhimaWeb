@@ -52,7 +52,7 @@
            			 导师介绍
           </a>
         </li>
-        <li class=""><a href="#fangtan"> <i class="icon-chevron-right"></i>访谈</a></li>
+       <!-- <li class=""><a href="#fangtan"> <i class="icon-chevron-right"></i>访谈</a></li> --> 
       </ul>
     </div>
     <div class="span9">

@@ -89,11 +89,19 @@ a {
     color: #08c;
     text-decoration: none;
 }
-a:visited {
+.acti > table> tbody > tr > td > a:visited {
 	color: rgb(60, 10, 10);
 	text-decoration:underline;
 	}
 
+.table a {
+    color: #08c;
+    text-decoration: none;
+}
+.table a:visited {
+	color: rgb(60, 10, 10);
+	text-decoration:underline;
+	}
 
 .bs-docs-sidenav > li > a {
     display: block;

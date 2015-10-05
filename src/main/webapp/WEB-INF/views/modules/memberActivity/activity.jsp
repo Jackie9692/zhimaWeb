@@ -115,7 +115,7 @@
             <li class=""><a href="${ctx}/content/memberAcitivty/reviewList"> <i class="icon-chevron-right"></i>往期回顾</a></li>
           </ul>
         </div>
-        <div class="span9" style="boder: 1px solid grey">
+        <div class="span9 "  style="boder: 1px solid grey">
 		 	<table class="table table-striped table-condensed">
               <thead>
                 <tr>
@@ -128,7 +128,7 @@
               <tbody>
 	          <c:forEach var="each" items="${pageResult.voList}">
 		          <tr>
-	                 <td colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank" ><p>${each.title}</p></a> </td>
+	                 <td  colspan="3"><a href="${ctx}/content/post/detail?id=${each.id}" target="_Blank" ><p>${each.title}</p></a> </td>
 	                 <td colspan="1"><p>${each.createDate.toString().split(" ")[0]}</p></td>
 	              </tr>		            
 	          </c:forEach>
