@@ -11,7 +11,7 @@
 	<meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="${ctx}/images/logo.png">
-    <title>发布编辑</title>
+    <title>发布编辑(new)</title>
     <link href="${ctxStatic}/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="${ctxStatic}/jQuery/jquery-1.9.1.min.js"></script>
     <script src="${ctxStatic}/bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -112,7 +112,7 @@
 					<select id="msgType">
 					  <option value="1">活动预告及报名</option>
 					  <option value="2">往期回顾</option>
-					  <option value="3">好文推荐</option>
+					  <option value="3">好文分享</option>
 					  <option value="4">书籍推荐</option>
 					</select>			      
 			    </div>

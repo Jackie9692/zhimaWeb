@@ -34,7 +34,7 @@ font-weight: bold;
 	font-family: 'Helvetica Neue','Helvetica Neue',Helvetica,'Hiragino Sans GB','Microsoft Yahei',tahoma;
 	width: 900px;
 	margin: 60 auto;
-	float: left;
+	/* float: left; */
 	padding-top: 45px;
 	padding-left: 14px;
 	padding-right: 14px;

@@ -1,7 +1,10 @@
 package com.zhima.dev.controller;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,12 +14,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.zhima.base.util.ContentType;
 import com.zhima.base.util.PageProperty;
 import com.zhima.base.util.PageResult;
 import com.zhima.base.util.StringUtils;
 import com.zhima.dev.bo.ContentPost;
+import com.zhima.dev.bo.EnrollDetail;
+import com.zhima.dev.service.EnrollDetailService;
 import com.zhima.dev.service.PostService;
 
 @Controller
@@ -28,11 +34,57 @@ public class ContentController {
 		this.postService = postService;
 	}
 	
+	@Autowired
+	private EnrollDetailService enrollDetailService;
+	public void setEnrollDetailService(EnrollDetailService enrollDetailService) {
+		this.enrollDetailService = enrollDetailService;
+	}
+
 	// 会员活动
 	@RequestMapping(value = "/memberAcitivty/foreshowList", method = RequestMethod.GET) //会员活动预告
 	public String adminActivityForeshowList(HttpServletRequest request, HttpServletResponse response, Model model) {
 		prepareList(request, response, model, ContentType.activity_forecast, "活动预告与报名");
 		return "modules/memberActivity/activity";
+	}
+	
+	@RequestMapping(value = "/memberAcitivty/enroll/save", method = RequestMethod.POST) //会员活动报名
+	@ResponseBody
+	public Map adminActivityEnroll(HttpServletRequest request, HttpServletResponse response, Model model) {
+//		data: {username:username, phoneNum:phoneNum, description:description, postId:postId,enrollNum；enrollNum},
+		Map map = new HashMap();
+		map.put("success", true);
+		map.put("avaliable", true);
+		
+		String userName = request.getParameter("username");
+		String phoneNum = request.getParameter("phoneNum");
+		String description = request.getParameter("description");
+		String enrollNum = request.getParameter("enrollNum");
+		String postId = request.getParameter("postId");
+		
+		
+		
+		if(StringUtils.isEmpty(userName)||StringUtils.isEmpty(phoneNum)||StringUtils.isEmpty(enrollNum)||StringUtils.isEmpty(postId)){
+			map.put("success", false);
+			return map;
+		}
+		
+		if(enrollDetailService.findByPhoneMum(phoneNum, postId) != null){
+			map.put("enrolled", false);
+			map.put("success", false);
+			return map;
+		}
+		EnrollDetail enrollDetail = new EnrollDetail();
+		
+		enrollDetail.setDescription(description);
+		enrollDetail.setUserName(userName);
+		enrollDetail.setPhoneNumber(phoneNum);
+		enrollDetail.setNumbers(Integer.parseInt(enrollNum));
+		enrollDetail.setPostId(Integer.parseInt(postId));
+		enrollDetail.setSignDate(new Timestamp(new Date().getTime()));
+		
+		enrollDetailService.create(enrollDetail);
+		
+		return map;
 	}
 	
 	

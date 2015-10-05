@@ -74,7 +74,7 @@
       function checkPageNo(toPageNo){
         var msg = "";
         if(toPageNo < 1) {
-          msg = "分页数不能小于0";
+          msg = "分页数不能小于1";
           alert(msg);
           return false;
         }

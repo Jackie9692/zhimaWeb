@@ -18,7 +18,60 @@
 	
     <script src="${ctxStatic}/jQuery/jquery-1.9.1.min.js"></script>
     <script src="${ctxStatic}/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	var ctx = "${ctx}";
+    	var postId = "${post.id}";
+    	$(document).ready(function(){
+    		$("#enrolCommitBtn").click(function(){
+    			var username = $("#username").val();
+    			var phoneNum = $("#phoneNum").val();
+    			var enrollNum = $("#enrollNum").val();
+    			var description = $("#description").val();
 
+				if(username == ""){
+					alert("用户名不能为空！");
+					return -1;
+				}
+				
+				var re = /^1\d{10}$/;
+				if(!re.test(phoneNum)){
+					alert("手机号非法！");
+					return -1;					
+				}
+				if(enrollNum < 1){
+					alert("参与人数不少于1人！");
+					return -1;
+				}
+				
+				$.ajax({
+			    	url: ctx + "/content/memberAcitivty/enroll/save",
+			    	data: {username:username, phoneNum:phoneNum, description:description, postId:postId,enrollNum:enrollNum},
+			    	async : false,
+			        type:"post",
+			        dataType:"json",
+			        success:function(data){
+						if(data.avaliable != true){
+							alert("活动手机号已注册！");
+							$("#myModal").modal("hide");
+							return -1;
+						}
+						if(data.success == true){
+							alert("保存成功！");
+							$("#myModal").modal("hide");
+							return ;
+						}
+			     	},
+			        error: function(){
+			        	console.log("request fail");
+			        }
+				});
+    		});
+    		
+    			
+    	});
+    	
+    	
+    </script> 
   </head>
 
   <body>
@@ -40,6 +93,50 @@
 		     </div>
 		</div>
 		<div class="blog_cont">${post.content}</div>
+		<c:if test="${post.cateId == 1}">
+			<!-- Button to trigger modal -->
+			<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal" style="float:right; margin-right:40px">我要报名</a>
+			 
+			<!-- Modal -->
+			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    <h3 id="myModalLabel">完善报名信息</h3>
+			  </div>
+			  <div class="modal-body">
+				<form class="form-horizontal">
+				  <div class="control-group">
+				    <label class="control-label">姓名：</label>
+				    <div class="controls">
+				      <input type="text" id="username" value="">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label">参与人数：</label>
+				    <div class="controls">
+				      <input type="number" id="enrollNum" value="">
+				    </div>
+				  </div>			
+				  <div class="control-group">
+				    <label class="control-label">手机号码：</label>
+				    <div class="controls">
+				      <input type="text" id="phoneNum" value="${typeString}" placeholder="非常重要">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label">备注：</label>
+				    <div class="controls">
+				      <textarea  rows="3" class="" type="text" id="description" placeholder="不多于80个字" value=""></textarea>
+				    </div>
+				  </div>
+				</form>			    
+			  </div>
+			  <div class="modal-footer">
+			  	<button class="btn btn-primary" id="enrolCommitBtn">提交</button>
+			    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+			  </div>
+			</div>
+		</c:if>
     </div>	
 	   
     </div>  

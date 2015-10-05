@@ -1,9 +1,11 @@
 package com.zhima.dev.controller.admin;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -24,6 +26,8 @@ import com.zhima.base.util.PageResult;
 import com.zhima.base.util.StringUtils;
 import com.zhima.base.util.User;
 import com.zhima.dev.bo.ContentPost;
+import com.zhima.dev.bo.EnrollDetail;
+import com.zhima.dev.service.EnrollDetailService;
 import com.zhima.dev.service.PostService;
 
 @Controller
@@ -33,6 +37,12 @@ public class AdminController {
 	private PostService postService;
 	public void setPostService(PostService postService) {
 		this.postService = postService;
+	}
+	
+	@Autowired
+	private EnrollDetailService enrollDetailService;
+	public void setEnrollDetailService(EnrollDetailService enrollDetailService) {
+		this.enrollDetailService = enrollDetailService;
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET) // 跳转到管理员登陆界面
@@ -79,6 +89,26 @@ public class AdminController {
 		
 		prepareList(request, response, model, ContentType.activity_forecast, "活动预告与报名");
 		return "modules/admin/activity";
+	}
+	
+	// 会员活动
+	@RequestMapping(value = "/memberAcitivty/foreshowEnroll", method = RequestMethod.GET) //会员活动预告报名
+	public String adminActivityForeshowListEnroll(HttpServletRequest request, HttpServletResponse response, Model model) {
+		boolean login = validateLogin(request);
+		if(!login){
+			String msg = "请重新登录";
+			model.addAttribute("msg", msg);
+			return "modules/admin/login";
+		}
+		String postId = request.getParameter("postId");
+		if(StringUtils.isEmpty(postId)){
+			return "error/404";
+		}
+		ContentPost contentPost = postService.findById(postId);
+		List<EnrollDetail> enrollList = enrollDetailService.findListByPostId(postId);
+		model.addAttribute("contentPost", contentPost);
+		model.addAttribute("enrollList", enrollList);
+		return "modules/admin/enrollDetail";
 	}
 	
 	
@@ -161,6 +191,14 @@ public class AdminController {
 		if(StringUtils.isEmpty(title)||StringUtils.isEmpty(content)||StringUtils.isEmpty(cateId)){
 			map.put("success", false);
 			return map;
+		}
+		try {
+			title = new String(title.getBytes(), "utf-8");
+			content = new String(content.getBytes(), "utf-8");
+			cateId = new String(cateId.getBytes(), "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		//改变post
@@ -245,6 +283,15 @@ public class AdminController {
 		if(StringUtils.isEmpty(id) || StringUtils.isEmpty(title) || StringUtils.isEmpty(content)){
 			map.put("success", false);
 			return map;
+		}
+		
+		try {
+			id = new String(id.getBytes(), "utf-8");
+			title = new String(title.getBytes(), "utf-8");
+			content = new String(content.getBytes(), "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		//改变post
