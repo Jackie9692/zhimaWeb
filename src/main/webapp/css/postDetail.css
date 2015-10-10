@@ -28,7 +28,7 @@ font-weight: bold;
 
 
 .blog_cont{
-	font-size: 15px;
+	/* font-size: 15px; */
 	margin-right: 20px;
 	position: relative;
 	font-family: 'Helvetica Neue','Helvetica Neue',Helvetica,'Hiragino Sans GB','Microsoft Yahei',tahoma;
@@ -36,9 +36,9 @@ font-weight: bold;
 	margin: 60 auto;
 	/* float: left; */
 	padding-top: 45px;
-	padding-left: 14px;
-	padding-right: 14px;
-	color: #747567;
+/* 	padding-left: 14px;
+	padding-right: 14px; */
+/* 	color: #747567; */
 	background: url(${ctx}/images/bottom_border.png) top repeat-x;
 }
 

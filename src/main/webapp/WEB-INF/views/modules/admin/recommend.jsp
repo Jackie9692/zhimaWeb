@@ -113,6 +113,7 @@
               <a href="${ctx}/admin/recommend/articleList"><i class="icon-chevron-right"></i>好文分享</a>
             </li>
             <li class=""><a href="${ctx}/admin/recommend/bookList"><i class="icon-chevron-right"></i>书籍推荐</a></li>
+            <li class=""><a href="${ctx}/admin/post/add" target="_blank"> <i class="icon-chevron-right"></i>我要发布</a></li>
           </ul>
         </div>
         <div class="span9" style="boder: 1px solid grey">
