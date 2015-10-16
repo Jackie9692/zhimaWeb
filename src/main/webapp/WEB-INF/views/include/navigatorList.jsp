@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
-<div class=" navbar  container navbar-fixed-top navf">
+<div class=" navbar  container navbar-fixed-top navf" style="font-size: 5px">
 		<ul class="nav pull-right ">
 			<li id="fat-menu" class="dropdown">
-				<li><a href="${ctx}/static/navigate">中文</a></li>
+				<li><a href="${ctx}/static/navigate">中文 </a></li>	
 				<li><a href="${ctx}/static/English" target="_blank">English</a></li>
 				<li><a href="${ctx}/static/contact" target="_blank">联系我们</a></li>
 				<li><a href="${ctx}/static/bbs" target="_blank">BBS</a></li>

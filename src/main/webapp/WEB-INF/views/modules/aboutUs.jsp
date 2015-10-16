@@ -64,7 +64,7 @@
 
           <section id="mode">
             <div class="page-header">
-                <h1>愿景和模式</h1>
+                <h2>愿景和模式</h2>
             </div >
             <div class="text">
               <p>
@@ -81,7 +81,7 @@
 
           <section id="enroll">
             <div class="page-header">
-              <h1>注册信息</h1>
+              <h2>注册信息</h2>
             </div >
             <div class="text">
               <p>
@@ -94,7 +94,7 @@
 
           <section id="construction">
             <div class="page-header">
-              <h1>组织结构</h1>
+              <h2>组织结构</h2>
             </div >
             <div class="row" align="center">
               <img src="${ctx}/images/zuzhijiegouone.png"  >
@@ -104,7 +104,7 @@
 
           <section id="originator">
             <div class="page-header">
-              <h1>创始人和董事会成员</h1>
+              <h2>创始人和董事会成员</h2>
             </div >
             <div class="row">
               <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
@@ -124,18 +124,22 @@
             </div>
 
              <div class="row" align="center">
-               <table  width="60%" align="center">
+               <table  width="100%" align="center">
                 <tr>
                   <td   align="center">
-                 <img src="${ctx}/images/liping4.png" width="200" height="200" class="img-circle" >
-                 <h4>沈丽萍</h4>
-               <span class="text-center" >CEO</span>
+	                 <img src="${ctx}/images/teacher/huotao.jpg" width="200" height="200" class="img-circle" >
+	                 <h4>瞿涛</h4>
+	                 <span class="text-center" >基金会创始人</span>
                   </td>
-                  <td width="100"></td>
+                  <td align="center">
+                  	 <img src="${ctx}/images/teacher/shenliping.jpg" width="200" height="200" class="img-circle" >
+	                 <h4>沈丽萍</h4>
+	                 <span class="text-center" >CEO</span>
+                  </td>
                   <td   align="center">
-                 <img src="${ctx}/images/baofeng.png" width="200" height="200" class="img-circle" >
-                 <h4>王宝峰</h4>
-               <span class="text-center"  >投资总监</span>
+	                 <img src="${ctx}/images/teacher/wangbaofeng.jpg" width="200" height="200" class="img-circle" >
+	                 <h4>王宝峰</h4>
+	                 <span class="text-center"  >投资总监</span>
                   </td>
                   </tr>
                  </table>
@@ -144,7 +148,7 @@
 
           <section id="team">
               <div class="page-header">
-                <h1>工作团队</h1>
+                <h2>工作团队</h2>
               </div >
               <div class="row">
                 <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
@@ -164,16 +168,20 @@
               </div>
 
               <div class="row" align="center">
-                <table  width="60%" align="center">
+                <table  width="100%" align="center">
                   <tr>
-                    <td   align="center">
-                      <img src="${ctx}/images/Huang Lianglei Profile.jpg" width="200" height="200" class="img-circle" >
+                    <td  align="center">
+                      <img src="${ctx}/images/teacher/wangruifeng.jpg" width="200" height="200" class="img-circle" >
+                      <h4>王瑞锋</h4>
+                      <span class="text-center" >执行秘书</span>
+                    </td>
+                    <td align="center">
+                      <img src="${ctx}/images/teacher/huanglianglei.jpg" width="200" height="200" class="img-circle" >
                       <h4>黄亮磊</h4>
                       <span class="text-center" >执行秘书</span>
                     </td>
-                    <td width="100"></td>
                     <td   align="center">
-                      <img src="${ctx}/images/Lin Qingqing Profile.jpg" width="200" height="200" class="img-circle" >
+                      <img src="${ctx}/images/teacher/linqingqing.jpg" width="200" height="200" class="img-circle" >
                       <h4>林庆庆</h4>
                       <span class="text-center"> 执行秘书</span>
                     </td>
@@ -184,7 +192,7 @@
 
           <section id="faq">
               <div class="page-header">
-                <h1>常见问题</h1>
+                <h2>常见问题</h2>
               </div >
 		           <section>
 		               <h4>EIC芝麻开花的愿景，理念，运作机制，法人，资金来源，财务机制。</h4>

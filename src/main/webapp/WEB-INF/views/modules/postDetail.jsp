@@ -77,7 +77,7 @@
   <body>
     <div class="mainBody">
    <div id="infocenter_middle">  	
-		 <div class="page-header-post"> 
+		 <div class="page-header-post" style="background:#90b83d ;"> 
 			 <div>
 			  <strong>
 		            <span>
@@ -92,10 +92,10 @@
 			                  <span id="readNum" >阅读(${post.visitedTimes})</span>
 		     </div>
 		</div>
-		<div class="blog_cont">${post.content}</div>
+		<div class="blog_cont" style="background-color:rgba(144, 184, 61, 0.2);">${post.content}</div>
 		<c:if test="${post.cateId == 1}">
 			<!-- Button to trigger modal -->
-			<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal" style="float:right; margin-right:40px">我要报名</a>
+			<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal" style="background:#90b83d ;float:right; margin-right:40px">我要报名</a>
 			 
 			<!-- Modal -->
 			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -23,7 +23,6 @@
     <!-- 实例化编辑器 -->
 	<style type="text/css">
 		body{
-			margin: 0;
 			background-color: grey;
 		}
 		#edui1{
@@ -98,7 +97,7 @@
 	</head>
 	
 	<body>
-		<div id="mainBody">
+		<div id="mainBody" >
 			<form class="form-horizontal">
 			  <div class="control-group hide">
 			    <label class="control-label">消息编号：</label>
