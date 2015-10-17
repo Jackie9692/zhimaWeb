@@ -11,9 +11,12 @@ body {
 	background-color:#ffffff;
 }
 .blog_tit_detail{
-	_position: relative;
+	position: relative;
+	top:15px;
+	left:20px;
     _z-index: 21;
     margin-right: 5px;
+    
 }
 strong {
 font-size: 26px;
@@ -42,6 +45,9 @@ font-weight: bold;
 /* 	color: #747567; */
 	background: url(${ctx}/images/bottom_border.png) top repeat-x;
 }
+p{
+	padding-right: 16px;
+}
 
 
 .page-header-post {
@@ -50,6 +56,7 @@ font-weight: bold;
 	margin: 25px 0 10px;
 	position: relative;
 	top: 15px;
+	left:14px;
     padding-bottom: 20px;
     background-color:#90b83d;
     border-bottom: 1px solid #eee;

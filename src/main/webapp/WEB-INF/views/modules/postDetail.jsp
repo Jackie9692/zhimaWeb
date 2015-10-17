@@ -76,11 +76,11 @@
 
   <body>
     <div class="mainBody">
-   <div id="infocenter_middle">  	
+      <div id="infocenter_middle">  	
 		 <div class="page-header-post" style="background:#90b83d ;"> 
 			 <div>
 			  <strong>
-		            <span>
+		            <span >
 		               <span class="blog_tit_detail" tabindex="1">                 
 		                       ${post.title}
 		               </span>

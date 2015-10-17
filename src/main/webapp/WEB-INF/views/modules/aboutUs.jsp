@@ -41,11 +41,11 @@
   <body data-spy="scroll" data-target=".jianting">
     <%@ include file="/WEB-INF/views/include/navigatorList.jsp"%>
 
-    <div class="container-fluid jianting">
+    <div class="container-fluid jianting " >
       <div class="row-fluid">
         <div class="span3 jianting">
           <ul class="nav nav-list bs-docs-sidenav affix" id="navMaodian">
-            <li class=""><a href="${ctx}/static/navigate">关于我们</a></li>
+            <li class=""><a href="#mode">关于我们</a></li>
             <li class="active">
               <a href="#mode">
                 <i class="icon-chevron-right"></i>
@@ -59,10 +59,9 @@
             <li class=""><a href="#faq"> <i class="icon-chevron-right"></i>常见问题</a></li>
           </ul>
         </div>
-        <div class="span9">
-
-
-          <section id="mode">
+        <div class="span9 ">
+			
+          <section id="mode" >
             <div class="page-header">
                 <h2>愿景和模式</h2>
             </div >
@@ -78,8 +77,9 @@
               </p>
             </div>
           </section>
-
-          <section id="enroll">
+		  
+          <section id="enroll" >
+          <br><br><br><br>
             <div class="page-header">
               <h2>注册信息</h2>
             </div >
@@ -93,6 +93,7 @@
           </section>
 
           <section id="construction">
+          <br><br><br><br>
             <div class="page-header">
               <h2>组织结构</h2>
             </div >
@@ -103,6 +104,7 @@
           </section>
 
           <section id="originator">
+          <br><br><br><br>
             <div class="page-header">
               <h2>创始人和董事会成员</h2>
             </div >
@@ -147,6 +149,7 @@
           </section>
 
           <section id="team">
+          <br><br><br><br>
               <div class="page-header">
                 <h2>工作团队</h2>
               </div >
@@ -191,6 +194,7 @@
             </section>
 
           <section id="faq">
+          <br><br><br><br>
               <div class="page-header">
                 <h2>常见问题</h2>
               </div >
