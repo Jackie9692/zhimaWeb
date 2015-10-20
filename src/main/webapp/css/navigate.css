@@ -128,7 +128,7 @@ a {
 }
 .table a:visited {
 	color: rgb(60, 10, 10);
-	text-decoration:underline;
+	text-decoration:none;
 	}
 
 .bs-docs-sidenav > li > a {
@@ -140,6 +140,9 @@ a {
 a:-webkit-any-link {
     cursor: auto;
 }
+a:hover, a:focus {
+    text-decoration: none;
+}
 .affix{
     position: fixed;
 }
@@ -149,8 +152,9 @@ p {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 1px;
     -webkit-margin-end: 0px;
-    padding-left: 1em;
-    text-indent: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+   
 }
 
 .text {

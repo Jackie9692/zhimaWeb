@@ -22,8 +22,10 @@
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#mode">愿景和模式</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#enroll">注册信息</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#construction">组织结构</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#originator">创始人和董事会成员</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#team">工作团队</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#creater">创始人</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#originator">指导董事</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#commiter">监督委员会</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#team">营运团队</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="${ctx}/static/navigate#faq">FAQs</a></li>
             </ul>
           </li>

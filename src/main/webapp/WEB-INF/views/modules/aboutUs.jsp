@@ -45,7 +45,7 @@
       <div class="row-fluid">
         <div class="span3 jianting">
           <ul class="nav nav-list bs-docs-sidenav affix" id="navMaodian">
-            <li class=""><a href="#mode">关于我们</a></li>
+            <li class=""><a href="">关于我们</a></li>
             <li class="active">
               <a href="#mode">
                 <i class="icon-chevron-right"></i>
@@ -54,8 +54,10 @@
             </li>
             <li class=""><a href="#enroll"> <i class="icon-chevron-right"></i>注册信息</a></li>
             <li class=""><a href="#construction"> <i class="icon-chevron-right"></i>组织结构</a></li>
-            <li class=""><a href="#originator"> <i class="icon-chevron-right"></i>创始人和董事会成员</a></li>
-            <li class=""><a href="#team"> <i class="icon-chevron-right"></i>工作团队</a></li>
+            <li class=""><a href="#creater"> <i class="icon-chevron-right"></i>创始人</a></li>
+            <li class=""><a href="#originator"> <i class="icon-chevron-right"></i>指导董事</a></li>
+            <li class=""><a href="#commiter"> <i class="icon-chevron-right"></i>监督委员会</a></li>
+            <li class=""><a href="#team"> <i class="icon-chevron-right"></i>营运团队</a></li>
             <li class=""><a href="#faq"> <i class="icon-chevron-right"></i>常见问题</a></li>
           </ul>
         </div>
@@ -103,10 +105,10 @@
             </div>
           </section>
 
-          <section id="originator">
+          <section id="creater">
           <br><br><br><br>
             <div class="page-header">
-              <h2>创始人和董事会成员</h2>
+              <h2>创始人</h2>
             </div >
             <div class="row">
               <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
@@ -125,24 +127,125 @@
               </table>
             </div>
 
+              <div class="row" align="center">
+               <table  width="100%" align="center">
+                <tr>
+                  <td   align="center">
+	                 <img src="${ctx}/images/teacher/huotao.png" width="200" height="250" class="img-rounded" >
+	                 <h4>瞿涛</h4>
+                  </td>
+                  <td align="center">
+                  	 <img src="${ctx}/images/teacher/shenliping.png" width="200" height="250" class="img-rounded" >
+	                 <h4>沈丽萍</h4>
+                  </td>
+                  <td   align="center">
+	                 <img src="${ctx}/images/teacher/wangbaofeng.png" width="200" height="250" class="img-rounded" >
+	                 <h4>王宝峰</h4>
+                  </td>
+                  </tr>
+                 </table>
+             </div>
+          </section>
+          
+           <section id="originator">
+          <br><br><br><br>
+            <div class="page-header">
+              <h2>指导董事</h2>
+            </div >
+            <div class="row">
+              <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
+                <tbody>
+                <tr>
+                  <td width="25%" height="120" rowspan="4" align="center">指导董事</td>
+                  <td  height="40" width="50%" align="center">陈光宪</td>
+                </tr>
+                <tr>
+                  <td  height="40"  width="50%" align="center">任汇川</td>
+                </tr>
+                <tr>
+                  <td  height="40" width="50%" align="center">邵黎明</td>
+                </tr>
+                <tr>
+                  <td  height="40" width="50%" align="center">王颐</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
              <div class="row" align="center">
                <table  width="100%" align="center">
                 <tr>
                   <td   align="center">
-	                 <img src="${ctx}/images/teacher/huotao.jpg" width="200" height="200" class="img-circle" >
-	                 <h4>瞿涛</h4>
-	                 <span class="text-center" >基金会创始人</span>
+	                 <img src="${ctx}/images/teacher/chenguangxian.png" width="200" height="250" class="img-rounded" >
+	                 <h4>陈光宪</h4>
                   </td>
                   <td align="center">
-                  	 <img src="${ctx}/images/teacher/shenliping.jpg" width="200" height="200" class="img-circle" >
-	                 <h4>沈丽萍</h4>
-	                 <span class="text-center" >CEO</span>
+                  	 <img src="${ctx}/images/teacher/renhuichuan.png" width="200" height="250" class="img-rounded" >
+	                 <h4>任汇川</h4>
                   </td>
                   <td   align="center">
-	                 <img src="${ctx}/images/teacher/wangbaofeng.jpg" width="200" height="200" class="img-circle" >
-	                 <h4>王宝峰</h4>
-	                 <span class="text-center"  >投资总监</span>
+	                 <img src="${ctx}/images/teacher/shaoliming.png" width="200" height="250" class="img-rounded" >
+	                 <h4>邵黎明</h4>
                   </td>
+                  <td   align="center">
+	                 <img src="${ctx}/images/teacher/wangyi.png" width="200" height="250" class="img-rounded" >
+	                 <h4>王颐</h4>
+                  </td>
+                  </tr>
+                 </table>
+             </div>
+          </section>
+          
+           <section id="commiter">
+          <br><br><br><br>
+            <div class="page-header">
+              <h2>监督委员会</h2>
+            </div >
+            <div class="row">
+              <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
+                <tbody>
+                <tr>
+                  <td width="25%" height="120" rowspan="10" align="center">监督委员会</td>
+                  <td  height="40" width="50%" align="center">葛炯</td>
+                </tr>
+                <tr>
+                  <td  height="40"  width="50%" align="center">李晶</td>
+                </tr>
+                <tr>
+                  <td  height="40" width="50%" align="center">倪晓红</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">苏梅</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">吴振刚</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">徐君</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">杨宏俊</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">杨俊俊</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">遇丹</td>
+                </tr>
+                 <tr>
+                  <td  height="40" width="50%" align="center">于江淳</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+             <div class="row" align="center">
+               <table  width="100%" align="center">
+                <tr>
+                  <td   align="center">
+	                 <img src="${ctx}/images/teacher/wuzhengang.png" width="200" height="250" class="img-rounded" >
+	                 <h4>吴振刚</h4>	      
+                  </td>                 
                   </tr>
                  </table>
              </div>
@@ -151,12 +254,23 @@
           <section id="team">
           <br><br><br><br>
               <div class="page-header">
-                <h2>工作团队</h2>
+                <h2>营运团队</h2>
               </div >
               <div class="row">
                 <table cellspacing="0" cellpadding="0" width="100%" class="table-bordered" border="2" align="center">
-                  <tbody>
-                  <tr>
+                  <tbody>                
+                    <td width="25%" height="120" rowspan="1" align="center">市场总监</td>
+                    <td  height="40" width="50%" align="center">陈晓燕</td>
+                  </tr>
+                   <tr>
+                    <td width="25%" height="120" rowspan="1" align="center">财务总监</td>
+                    <td  height="40" width="50%" align="center">徐君</td>
+                  </tr>
+                   <tr>
+                    <td width="25%" height="120" rowspan="1" align="center">法务总监</td>
+                    <td  height="40" width="50%" align="center">周锋</td>
+                  </tr>
+                   <tr>
                     <td width="25%" height="120" rowspan="3" align="center"> 执行秘书</td>
                     <td  height="40" width="50%" align="center">王瑞锋</td>
                   </tr>
@@ -166,29 +280,44 @@
                   <tr>
                     <td  height="40" width="50%" align="center">林庆庆</td>
                   </tr>
+                  <tr>
                   </tbody>
                 </table>
               </div>
 
               <div class="row" align="center">
+               <table  width="65%" align="center">
+                  <tr>
+                    <td  align="center">
+                      <img src="${ctx}/images/teacher/xujun.png" width="200" height="250" class="img-rounded" >
+                      <h4>徐君</h4>
+                      <span class="text-center">财务总监</span>
+                    </td>
+                    <td align="center">
+                      <img src="${ctx}/images/teacher/zhoufeng.png" width="200" height="250" class="img-rounded" >
+                      <h4>周锋</h4>
+                      <span class="text-center">法务总监</span>
+                    </td>
+                  </tr>
+                </table>  
                 <table  width="100%" align="center">
                   <tr>
                     <td  align="center">
-                      <img src="${ctx}/images/teacher/wangruifeng.jpg" width="200" height="200" class="img-circle" >
+                      <img src="${ctx}/images/teacher/wangruifeng.png" width="200" height="250" class="img-rounded" >
                       <h4>王瑞锋</h4>
-                      <span class="text-center" >执行秘书</span>
+                      <span class="text-center">执行秘书</span>
                     </td>
                     <td align="center">
-                      <img src="${ctx}/images/teacher/huanglianglei.jpg" width="200" height="200" class="img-circle" >
+                      <img src="${ctx}/images/teacher/huanglianglei.png" width="200" height="250" class="img-rounded" >
                       <h4>黄亮磊</h4>
-                      <span class="text-center" >执行秘书</span>
+                      <span class="text-center">执行秘书</span>
                     </td>
                     <td   align="center">
-                      <img src="${ctx}/images/teacher/linqingqing.jpg" width="200" height="200" class="img-circle" >
+                      <img src="${ctx}/images/teacher/linqingqing.png" width="200" height="250" class="img-rounded" >
                       <h4>林庆庆</h4>
-                      <span class="text-center"> 执行秘书</span>
+                      <span class="text-center">执行秘书</span>
                     </td>
-                  </tr>
+                  </tr>                 
                 </table>
               </div>
             </section>
