@@ -3,7 +3,7 @@
   type="WEB"
   name="zhimaWeb"
   id="myeclipse.1442491634169"
-  context-root="/zhimaWeb"
+  context-root="/"
   j2ee-spec="6.0"
   archive="zhimaWeb.war">
   <attributes>

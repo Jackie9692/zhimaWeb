@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>EIC&nbsp;芝麻开发全人格教育基金</title>
-<link rel="icon" href="${ctx}/images/favicon.ico" type="image/x-icon" /> 
+ <link rel="icon" href="${ctx}/images/logo.png">
 <link rel="shortcut icon" href="/test.ico" type="image/x-icon" />
 <base href="${ctx}">
 <meta name="decorator" content="default" />
@@ -40,30 +40,17 @@
 					</div>					
 				</div>
 				<div class="item">
-					<img src="${ctx}/images/backgroundImg2.jpg" alt="">
-					<div class="carousel-caption slogan">
-						<h3>Second Thumbnail label</h3>
-						<p>I get used to pouring away the water directly after I using it. SOneday, my mother asked me to help her wash the closthes,
-						 as I was about to pour away the water, my mother stopped me and she told me that most water can be recycled.
-						 It can be used to water the flower or to wash other things.</p>
-					</div>
-					<div class="clickIn">
-						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.png"/></a>
-					</div>					
+					<img src="${ctx}/images/backgroundImg4.jpg" alt="">				
 				</div>
 				<div class="item">
-					<img src="${ctx}/images/backgroundImg3.jpg" alt="">
-					<div class="carousel-caption slogan">
-						<h3>Third Thumbnail label</h3>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
-							dolor id nibh ultricies vehicula ut id elit.</p>
-					</div>
-					
-					<div class="clickIn">
-						<a href="${ctx}/static/navigate"><img src="${ctx}/images/clickIn.png"/></a>
-					</div>
+					<img src="${ctx}/images/backgroundImg5.jpg" alt="">				
 				</div>
+				<div class="item">
+					<img src="${ctx}/images/backgroundImg6.jpg" alt="">				
+				</div>
+				<div class="item">
+					<img src="${ctx}/images/backgroundImg7.jpg" alt="">				
+				</div>																				
 			</div>
 			<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 			<a class="right carousel-control" href="#myCarousel"
