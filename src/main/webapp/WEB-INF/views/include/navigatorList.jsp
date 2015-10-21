@@ -9,12 +9,11 @@
 			</li>
         </ul>
 </div>
-<div class="bs-docs-example">
+<div class="bs-docs-example"  >
   <div id="navbar-example" class="navbar navbar-static navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container" style="width: auto;">
-      	<ul class="nav"><a class="brand" href="${ctx}/static/welcome" title="返回欢迎界面">芝麻开花</a></ul>
-        
+    <div class="navbar-inner"  >
+      <div id=header; class="container" style="width: auto;">
+      	<ul class="nav"><a class="brand " href="${ctx}/static/welcome" title="返回欢迎界面"><img src="${ctx}/images/daohang.png" width="20" height="20" class="img-rounded"  >芝麻开花</a></ul>
         <ul class="nav" role="navigation">
           <li class="dropdown">
             <a   id="drop1" href="${ctx}/static/navigate" role="button" class="dropdown-toggle" data-toggle="dropdown">关于我们 <b class="caret"></b></a>

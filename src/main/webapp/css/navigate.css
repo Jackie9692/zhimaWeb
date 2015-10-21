@@ -11,6 +11,9 @@ body {
 	background-repeat:no-repeat; */
 	font-size: 16px;
 }
+
+}
+
 .row{
     margin-top:50px;
 }
@@ -192,6 +195,10 @@ em{
 
 
 li:hover ul, li.over ul { display: block; }
+
+.dropdown-menu{
+	margin-top:-3px;
+}
 /*
  * Global add-ons
  */

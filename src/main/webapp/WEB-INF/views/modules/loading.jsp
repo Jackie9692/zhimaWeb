@@ -29,10 +29,13 @@
   <body>
    <div class="carousel-inner">
     	<img  src="${ctx}/images/backgroundImg1.jpg" >
-    	<div class="load"  >
-    		<img class="transparent_class" src="${ctx}/images/load.bmp"   >
-    		<h5 class="loadSize">建设中</h5>
-    	</div>
+    	
+    	<div class="progress progress-striped active load" >
+ 		 <div class="bar transparent_class" style="width: 50%;"><div><h5 class="loadSize">建设中</h5></div></div>
+ 		 
+		</div>
+    	<%-- 	<img class="" src="${ctx}/images/load.bmp" >--%>
+    	
     </div>
 
 	 
