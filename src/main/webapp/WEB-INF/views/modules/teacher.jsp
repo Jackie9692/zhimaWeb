@@ -58,10 +58,17 @@
     <div class="span9">
       <section id="teacher">
         <div class="page-header">
-          <h1>导师介绍</h1>
+          <h1>导师介绍</h1><h6>（按姓氏笔画排序）</h6>
         </div >
         <div class="row" align="center">
           <ul class="thumbnails" >
+          	 <li class="span3" >
+              <a href="${ctx}/static/mentor/detail?name=wangbaofeng" class="thumbnail">
+                <img src="${ctx}/images/teacher/wangbaofeng.png" class="img-rounded" width="200" height="250">
+              </a>
+              <br>
+              <a href="${ctx}/static/mentor/detail?name=wangbaofeng">王宝峰</a>
+            </li>
             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=wangyi" class="thumbnail">
                 <img src="${ctx}/images/teacher/wangyi.png" class="img-rounded" width="200" height="250">
@@ -69,42 +76,29 @@
               <br>
               <a href="${ctx}/static/mentor/detail?name=wangyi">王颐</a>
             </li>
-            <li class="span3" >
-              <a href="${ctx}/static/mentor/detail?name=chenjianzhu" class="thumbnail">
-                <img src="${ctx}/images/teacher/chenjianzhu.png" class="img-rounded" width="200" height="250">
-              </a>
-              <br>
-              <a href="${ctx}/static/mentor/detail?name=chenjianzhu">陈建柱</a>
-            </li>
-            <li class="span3" >
-              <a href="${ctx}/static/mentor/detail?name=chenguangxian" class="thumbnail">
-                <img src="${ctx}/images/teacher/chenguangxian.png" class="img-rounded" width="200" height="250">
-              </a>
-              <br>
-              <a href="${ctx}/static/mentor/detail?name=chengaungxian">陈光宪</a>
-            </li>
-            <li class="span3" >
-              <a href="${ctx}/static/mentor/detail?name=shaoliming" class="thumbnail">
-                <img src="${ctx}/images/teacher/shaoliming.png" class="img-rounded" width="200" height="250">
-              </a>
-              <br>
-              <a href="${ctx}/static/mentor/detail?name=shaoliming">邵黎明</a>
-            </li>
-          </ul>
-          <ul class="thumbnails" >
-            <li class="span3" >
+             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=renhuichuan" class="thumbnail">
                 <img src="${ctx}/images/teacher/renhuichuan.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
               <a href="${ctx}/static/mentor/detail?name=renhuichuan">任汇川</a>
             </li>
-            <li class="span3" >
+             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=liubaodong" class="thumbnail">
                 <img src="${ctx}/images/teacher/liubaodong.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
               <a href="${ctx}/static/mentor/detail?name=liubaodong">刘宝东</a>
+            </li>
+            
+          </ul>
+          <ul class="thumbnails" >
+          <li class="span3" >
+              <a href="${ctx}/static/mentor/detail?name=chenguangxian" class="thumbnail">
+                <img src="${ctx}/images/teacher/chenguangxian.png" class="img-rounded" width="200" height="250">
+              </a>
+              <br>
+              <a href="${ctx}/static/mentor/detail?name=chengaungxian">陈光宪</a>
             </li>
             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=chenyougang" class="thumbnail">
@@ -114,15 +108,30 @@
               <a href="${ctx}/static/mentor/detail?name=chenyougang">陈有刚</a>
             </li>
             <li class="span3" >
+              <a href="${ctx}/static/mentor/detail?name=shenliping" class="thumbnail">
+                <img src="${ctx}/images/teacher/shenliping.png" class="img-rounded" width="200" height="250">
+              </a>
+              <br>
+              <a href="${ctx}/static/mentor/detail?name=shenliping">沈丽萍</a>
+            </li>
+             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=wangqing" class="thumbnail">
                 <img src="${ctx}/images/teacher/wangqing.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
               <a href="${ctx}/static/mentor/detail?name=wangqing">汪青</a>
-            </li>
+            </li>                    
           </ul>
+          
           <ul class="thumbnails" >
-            <li class="span3" >
+          <li class="span3" >
+              <a href="${ctx}/static/mentor/detail?name=chenjianzhu" class="thumbnail">
+                <img src="${ctx}/images/teacher/chenjianzhu.png" class="img-rounded" width="200" height="250">
+              </a>
+              <br>
+              <a href="${ctx}/static/mentor/detail?name=chenjianzhu">陈建柱</a>
+            </li>
+             <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=wuzhengang" class="thumbnail">
                 <img src="${ctx}/images/teacher/wuzhengang.png" class="img-rounded" width="200" height="250">
               </a>
@@ -130,29 +139,35 @@
               <a href="${ctx}/static/mentor/detail?name=wuzhengang">吴振刚</a>
             </li>
             <li class="span3" >
-              <a href="${ctx}/static/mentor/detail?name=shenliping" class="thumbnail">
-                <img src="${ctx}/images/teacher/shenliping.png" class="img-rounded" width="200" height="250">
+              <a href="${ctx}/static/mentor/detail?name=chenhaibin" class="thumbnail">
+                <img src="${ctx}/images/teacher/chenhaibin.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
-              <a href="${ctx}/static/mentor/detail?name=shenliping">沈丽萍</a>
-            </li>
+              <a href="${ctx}/static/mentor/detail?name=chenhaibin">陈海滨</a>
+            </li>  
             <li class="span3" >
-              <a href="${ctx}/static/mentor/detail?name=wangbaofeng" class="thumbnail">
-                <img src="${ctx}/images/teacher/wangbaofeng.png" class="img-rounded" width="200" height="250">
+              <a href="${ctx}/static/mentor/detail?name=shaoliming" class="thumbnail">
+                <img src="${ctx}/images/teacher/shaoliming.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
-              <a href="${ctx}/static/mentor/detail?name=wangbaofeng">王宝峰</a>
-            </li>
-            <li class="span3" >
+              <a href="${ctx}/static/mentor/detail?name=shaoliming">邵黎明</a>
+            </li>                                      
+            
+          </ul>
+          	
+		<ul class="thumbnails" >
+          <li class="span3" >
               <a href="${ctx}/static/mentor/detail?name=huotao" class="thumbnail">
                 <img src="${ctx}/images/teacher/huotao.png" class="img-rounded" width="200" height="250">
               </a>
               <br>
-              <a href="${ctx}/static/mentor/detail?name=huotao">瞿涛</a>
+              <a href="${ctx}/static/mentor/detail?name=huotao" text-align="center">瞿涛</a>
             </li>
-          </ul>
+            </ul>
         </div>
-
+		
+   
+        </div>
 
 
       </section>

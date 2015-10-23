@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
-<div class=" navbar  container navbar-fixed-top navf" style="font-size: 5px">
+<div class=" navbar  container navbar-fixed-top navf" >
 		<ul class="nav pull-right ">
 			<li id="fat-menu" class="dropdown">
 				<li><a href="${ctx}/static/navigate">中文 </a></li>	
