@@ -166,19 +166,18 @@
             </ul>
         </div>
 		
-   
-        </div>
+ 
 
 
       </section>
 		
 
-          <section id="fangtan">
+          <section id="fangtan" >
             <div class="page-header">
               <h1>访谈</h1>
             </div >
             <div class="row" align="center">
-              <img src="${ctx}/images/zuzhijiegouone.png"  >
+              <%-- <img src="${ctx}/images/zuzhijiegouone.png"  > --%>
 
             </div>
           </section>

@@ -346,3 +346,13 @@ li:hover ul, li.over ul { display: block; }
     text-align: center;
     padding-top: 15px;
 }
+
+
+#smallLog{
+	    margin-top: -3px;
+}
+
+
+h6{
+	font-weight: normal;
+} 

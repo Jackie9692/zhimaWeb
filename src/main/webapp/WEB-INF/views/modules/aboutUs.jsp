@@ -237,7 +237,7 @@
 	                      <span class="text-center">市场总监</span>
 	                  </td>
 	                  <td align="center">
-                      <img src="${ctx}/images/teacher/zhoufeng.png" width="200" height="250" class="img-rounded" >
+                      <img src="${ctx}/images/teacher/zhoufeng.jpg" width="200" height="250" class="img-rounded" >
                       <h4>周锋</h4>
                       <span class="text-center">法务总监</span>
                     </td>
@@ -246,19 +246,14 @@
                       <h4>徐君</h4>
                       <span class="text-center">财务总监</span>
                     </td>
-                    
-                       </tr>
-                </table>
-                 <table  width="100%" align="center">
-                  <tr>
-                  		<td width="6%">
-                  		</td>
-	                 <td  >
+                   </tr>
+                   <tr>
+ 	                 <td align="center" class="">
 	                 	<img src="${ctx}/images/teacher/huotao.png" width="200" height="250" class="img-rounded" >
 	                 	<h4>瞿涛</h4>
-	                      <span class="text-center">品牌总监</span>
-	                 </td>
-                     <tr>
+	                    <span class="text-center">品牌总监</span>
+	                 </td>	                   
+                   </tr>
                 </table>
                 <table  width="100%" align="center">
                   <tr>
